@@ -11,6 +11,10 @@ class Ghost < Formula
     url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_MacOS-64bit.zip"
     sha256 "005ff749b001a16042a1a1c50e1582bc1866b3b8226e8ebeef29e91a19c9e0a3"
   end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_MacOS-ARM64.zip"
+    sha256 "e71a37151e063a87d093e5842d0ccd8796719eae69e787ed93d17d4877dea41c"
+  end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_Linux-64bit.tar.gz"
     sha256 "5401abfe23344edccc620e63dda82be1502042115162badf36ae6d77558e7edd"
