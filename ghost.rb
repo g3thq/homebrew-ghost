@@ -4,24 +4,24 @@
 class Ghost < Formula
   desc ""
   homepage "https://github.com/g3thq/ghost"
-  version "0.4.9"
+  version "0.4.10"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_MacOS-64bit.zip"
-    sha256 "005ff749b001a16042a1a1c50e1582bc1866b3b8226e8ebeef29e91a19c9e0a3"
+    url "https://github.com/g3thq/ghost/releases/download/v0.4.10/ghost_0.4.10_MacOS-64bit.zip"
+    sha256 "cc2c63d9c8a5220da9cb04ed4af548f1f389c86888ef3a1e37d59f21c164c335"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_MacOS-ARM64.zip"
-    sha256 "e71a37151e063a87d093e5842d0ccd8796719eae69e787ed93d17d4877dea41c"
+    url "https://github.com/g3thq/ghost/releases/download/v0.4.10/ghost_0.4.10_MacOS-ARM64.zip"
+    sha256 "061c4aa6f2c7c3464b8970a3d17d0673accc5efb563a1729c5be279abc8b9c07"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_Linux-64bit.tar.gz"
-    sha256 "5401abfe23344edccc620e63dda82be1502042115162badf36ae6d77558e7edd"
+    url "https://github.com/g3thq/ghost/releases/download/v0.4.10/ghost_0.4.10_Linux-64bit.tar.gz"
+    sha256 "b773fbf8ebbccc15eeaeb2b442f2dd0cf61b09a00f3a2edf46b28f7ecd2c0ca2"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.9/ghost_0.4.9_Linux-ARM64.tar.gz"
-    sha256 "3c252aeaf92393b88e24eb58876107d43c9e795b2daaf3880581ba909c9a72c5"
+    url "https://github.com/g3thq/ghost/releases/download/v0.4.10/ghost_0.4.10_Linux-ARM64.tar.gz"
+    sha256 "71c64c7bad7b79e6a7a6b70e04b913ac792aefd15dd1520dd222b07e34a63ac6"
   end
 
   def install
