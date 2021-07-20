@@ -2,26 +2,26 @@
 # frozen_string_literal: true
 
 class Ghost < Formula
-  desc ""
+  desc "Cloud Native shift-left scanner for containers and infrastructure as code"
   homepage "https://github.com/g3thq/ghost"
-  version "0.4.12"
+  version "0.5.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.12/ghost_0.4.12_MacOS-64bit.zip"
-    sha256 "7aa97307a3d2c84a7c3cbd82f182afc1fb69b015b47b1197457b7f5fd091ef74"
+    url "https://github.com/g3thq/ghost/releases/download/v0.5.1/ghost_0.5.1_MacOS-64bit.zip"
+    sha256 "46087d35815ab96d11635d6ba7df239356a20b4fc8aa1cf6f69fd2870bad27ae"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.12/ghost_0.4.12_MacOS-ARM64.zip"
-    sha256 "2000ddfc5824b4d544392132efcdaabf91e9309efcae3565e38b35ea80f8a660"
+    url "https://github.com/g3thq/ghost/releases/download/v0.5.1/ghost_0.5.1_MacOS-ARM64.zip"
+    sha256 "abdf61c514a4d882b03a35760c50256c5851e0784773a0aa196aafbd0897719b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.12/ghost_0.4.12_Linux-64bit.tar.gz"
-    sha256 "0c0e4b1c30a958cbe1fa406879f07cb65feed8f45769cdeec2a2a6b26ee55b32s"
+    url "https://github.com/g3thq/ghost/releases/download/v0.5.1/ghost_0.5.1_Linux-64bit.tar.gz"
+    sha256 "9fdf81f1d43085ea24a5abc364f0a42a6f0fb357d3e5e2b024d00f729ac13bf5"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/g3thq/ghost/releases/download/v0.4.12/ghost_0.4.12_Linux-ARM64.tar.gz"
-    sha256 "45bb63a634d0465b5b8bd606ae02f419a44e92d3e0ea0e74a3fd2fc76bdb960d"
+    url "https://github.com/g3thq/ghost/releases/download/v0.5.1/ghost_0.5.1_Linux-ARM64.tar.gz"
+    sha256 "37b7cd0215582caf66f337f70a2dc4cd41fac961fba12921a701735fd0c1e3c9"
   end
 
   def install
