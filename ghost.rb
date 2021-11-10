@@ -5,7 +5,6 @@ class Ghost < Formula
   desc "Cloud Native shift-left scanner for containers and infrastructure as code"
   homepage "https://github.com/g3thq/ghost"
   version "0.6.9"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/g3thq/ghost/releases/download/v0.6.9/ghost_0.6.9_MacOS-64bit.zip"
